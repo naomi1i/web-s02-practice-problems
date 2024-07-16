@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Declaring an object Practice Problems</h1>
+  <script>
+    /*
+    PROBLEM 1: Create a new empty human object.
+    */
+    //ENTER YOUR CODE HERE
+    let human = {};
+    /*
+    PROBLEM 2: Create a hero object with firstName, lastName,
+    and age properties using the values Bruce Wayne, 33.
+    */
+    //ENTER YOUR CODE HERE
+    let hero = { firstName: 'Bruce', lastName: 'Wayne', age: 33 };
+    /*
+    PROBLEM 3: Using the supplied object, log the cake's flavor property twice,
+    once with simple dot notation and a second time with a variable named
+    currentFlavor storing the value of flavor using bracket notation.
+    */
+    //ENTER YOUR CODE HERE
+    let cake = {
+      size: "large",
+      shape: "round",
+      frosting: "vanilla",
+      flavor: "carrot"
+    };
+    console.log(cake.flavor);
+    let currentFlavor = cake['flavor'];
+    console.log(currentFlavor);
+    /*
+    PROBLEM 4: Modify the existing cake object flavor to "chocolate" and
+    log the result.
+    */
+    //ENTER YOUR CODE HERE
+    cake.flavor = 'chocolate';
+    console.log(cake.flavor);
+    /*
+    PROBLEM 5 (DEBUGGING): Why doesn't this log out the appropriate value?
+    (uncomment line console log below)
+    */
+    console.log(`The current flavor is ${cake.flavor}`);
+  </script>
+</body>
+
+</html>
