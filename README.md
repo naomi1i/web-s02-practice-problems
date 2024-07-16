@@ -6,7 +6,7 @@ Each folder inside this repository corresponds to a **Learning Objective** in yo
 
 **In order to work on a set of practice problems:**
 
-1. Clone this repository to your computer.
+1. Clone this repository to your computer. (You only need to do this once.)
 2. Open the desired `index.html` file using VSCode.
 3. Open `index.html` using Chrome.
 
