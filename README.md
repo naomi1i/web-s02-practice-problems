@@ -12,6 +12,6 @@ Each folder inside this repository corresponds to a **Learning Objective** in yo
 
 **In order to solve problems, work inside the `<script>` tag using VSCode.**
 
-**In order to check for errors, open the Console in Chrome DevTools.**
+**In order to check for messages and errors, open the Console in Chrome DevTools.**
 
 If you get stuck, check the `solution.html` file.
