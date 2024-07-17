@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+    /*
+        PROBLEM 1:
+        Create an object called student with properties for name, age, and grade. Use dot notation to access the name property and store it in a variable called studentName.
+        Use square bracket notation to access the age property and store it in a variable called studentAge.
+        Finally, log the grade property using either dot or square bracket notation.
+        */
+    let student = {
+      name: "John",
+      age: 16,
+      grade: 10
+    };
+
+    let studentName = student.name;
+    let studentAge = student['age'];
+
+    console.log(student.grade); // or console.log(student['grade']);
+
+    /*
+    PROBLEM 2:
+    Create an object called car with properties for make, model, year, and color.
+    Use dot notation to access the make and model properties and concatenate them together with a space in between. Store the result in a variable called carMakeModel.
+    Use square bracket notation to access the year property and store it in a variable called carYear.
+    Finally, log the color property using either dot or square bracket notation.
+    */
+    let car = {
+      make: "Toyota",
+      model: "Camry",
+      year: 2022,
+      color: "blue"
+    };
+
+    let carMakeModel = car.make + ' ' + car.model;
+    let carYear = car['year'];
+
+    console.log(car.color); // or console.log(car['color']);
+
+    /*
+       PROBLEM 3:
+       With the code below, use dot notation to log the title and author properties of the book object.
+       Then, use square bracket notation to log the name of the protagonist.
+       Finally, use dot notation to log the occupation of the protagonist in the characters array.
+       */
+    let book = {
+      title: "The Hitchhiker's Guide to the Galaxy",
+      author: "Douglas Adams",
+      publicationYear: 1979,
+      protagonist: { name: "Arthur Dent", occupation: "Everyman" }
+    };
+    console.log(book.title); // "The Hitchhiker's Guide to the Galaxy"
+    console.log(book.author); // "Douglas Adams"
+
+    console.log(book.protagonist['name']); // "Arthur Dent"
+
+    console.log(book.protagonist.occuptation); // "Everyman"
+
+    /*
+        PROBLEM 4:
+        Using the code below, Use square bracket notation to access the math grade and store it in a variable called aliceMathGrade.
+        Then, use dot notation to access the name and history grade for the student and concatenate them together with a space in between. Store the result in a variable called aliceNameAndHistoryGrade.
+        */
+    let aliceStudent = {
+      name: "Alice",
+      grades: { math: 95, science: 83, history: 88 }
+    }
+    let aliceMathGrade = student.grades['math'];
+    console.log(aliceMathGrade); // 95
+
+    let aliceNameAndHistoryGrade = student.name + ' ' + student.grades.history;
+    console.log(aliceNameAndHistoryGrade); // "Alice 88"
+
+  </script>
+
+</body>
+
+</html>
