@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+   PROBLEM 1: Create an array from the string's characters below and console.log the resulting array to the console.
+   */
+    const name = 'Bernadette';
+
+    console.log(name.split(''));
+
+    /*
+    PROBLEM 2: Create an array from the string's characters below and console.log the resulting array to the console.
+    */
+    const hawaiianFish = 'humuhumunukunukuāpuaʻa';
+
+    console.log(hawaiianFish.split(''));
+
+    /*
+   PROBLEM 3: Create an array from the string's words below and console.log the resulting array to the console.
+   */
+    const motivation = 'Today is your opportunity to build the tomorrow you want';
+
+    console.log(motivation.split(' '));
+
+    /*
+    PROBLEM 4: Create an array from the string's words below and console.log the resulting array to the console.
+    */
+    const proverb = 'The bamboo that bends is stronger that the oak that resists';
+
+    console.log(proverb.split(' '));
+
+    /*
+    PROBLEM 5 (DEBUGGING): The expected output of the code below is to split the myString string into an array using the , character as a separator, and then print out the resulting array to the console. However, when you run this code, you notice that myArray is an empty array.
+
+    Here is more information about the split method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+    const myString = "apple,banana,orange,pear";
+    const myArray = myString.split();
+
+    console.log(myArray);
+    */
+    const myString = "apple,banana,orange,pear";
+    const myArray = myString.split(','); //putting a comma in the string will separate the string into elements every time there is a comma in the string
+    console.log(myArray);
+
+  </script>
+
+</body>
+
+</html>

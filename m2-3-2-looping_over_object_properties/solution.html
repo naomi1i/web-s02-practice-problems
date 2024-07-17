@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    const fakeProfile = {
+      name: "Julio Gonzales",
+      age: "23",
+      occupation: "Software Engineer"
+    }
+
+    /*
+    PROBLEM 1: Given the “fakeProfile” object above, write a function that uses a “for…in” loop and only prints the three properties of this object.  Don't forget to invoke this function!
+    */
+    function propertyList() {
+      for (i in fakeProfile)
+        console.log(i)
+    }
+
+    propertyList()
+
+    /*
+    PROBLEM 2: Given the "fakeProfile" object above, write a function that uses a "for..in" loop and prints the three properties and their values side-by-side.
+    */
+    function propertyAndValueList() {
+      for (i in fakeProfile)
+        console.log(i + " : " + fakeProfile[i])
+    }
+
+    propertyAndValueList()
+
+    /*
+   PROBLEM 3: Given the “fakeProfile” object above, write a function that uses a “for…in” loop and only prints the value of the name property in a sentence that reads: “Hello, my name is Julio Gonzales.”  Hint: you will need to include an if statement within the loop.
+   */
+    function greeting() {
+      for (i in fakeProfile) {
+        if (i === "name") {
+          console.log("Hello, my name is " + fakeProfile[i])
+        }
+      }
+    }
+
+    greeting()
+
+    /*
+    PROBLEM 4: Declare a variable that holds an object with three properties: Red, Green, and Blue (or R,G,B).  Give each of these properties any number value from 0 to 255.  Write a function called getMyRGB() that loops through each property and prints the number values of each to the console.
+    */
+    objectColors = {
+      Red: 34,
+      Green: 123,
+      Blue: 222
+    }
+
+    function getMyRGB() {
+      for (i in objectColors) {
+        console.log(objectColors[i])
+      }
+    }
+
+    getMyRGB()
+
+    /*
+    PROBLEM 5 (DEBUGGING): Given the same “fakeProfile” object we used in problems 1-3, the following loop prints “undefined” which is not what you were expecting.  Please fix the loop with the correct syntax to successfully print out “Julio Gonzales, 23, Software Engineer.
+    */
+
+    for (i in fakeProfile) {
+      console.log(fakeProfile[i]) // replaced .i with [i]
+    }
+  </script>
+
+</body>
+
+</html>
