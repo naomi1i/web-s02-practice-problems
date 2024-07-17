@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+  DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+  */
+    const originalArray = [1, 2, 3, 4];
+    /*
+  PROBLEM 1:
+  Copy the above array named originalArray into another array named newArray, using slice and log both arrays to the console.
+  */
+    //ENTER YOUR CODE HERE
+    const newArray = originalArray.slice(); // slice makes a new copy of the array, The original array will not be modified.
+    console.log(newArray, originalArray);
+    /*
+  PROBLEM 2:
+  Using slice, log to the console an array that only includes the last two elements of the above array named originalArray so the output should be [3, 4]
+  */
+    //ENTER YOUR CODE HERE
+    console.log(originalArray.slice(2, 4)); // returns a shallow copy of the array from index 2 inclusive to index 4 non-inclusive (out of bounds).
+    // OR
+    console.log(originalArray.slice(2)); // if no end index provided, the default assume the end of the array
+    /*
+  PROBLEM 3:
+  Using slice, log to the console an array that only includes the two elements in the middle of the above array named originalArray so the output should be [2, 3]
+  */
+    //ENTER YOUR CODE HERE
+    console.log(originalArray.slice(1, 3));
+    /*
+  PROBLEM 4:
+  Using slice, log to the console an array that only includes the last element in the above array named originalArray so the output should be [4]
+  */
+    //ENTER YOUR CODE HERE
+    console.log(originalArray.slice(3, 4));
+    // OR
+    console.log(originalArray.slice(3));
+    // OR
+    console.log(originalArray.slice(-1)); // this return an array containing the first element "from the other side" i.e. the last element
+    /*
+  PROBLEM 5 (DEBUGGING):
+  The following code is throwing this error: "TypeError: numbers.slice is not a function". Fix the error so that the console prints “12345”.
+  */
+    let numbers = "1234567"; // To solve the error, convert the value to a string before calling the method or make sure to only call the slice method on strings or arrays.
+    console.log(numbers.slice(-1, 5));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    PROBLEM 1: Pop the last element from the names array
+    and store it in a variable called removedName.
+    */
+    const names = ["Alice", "Bob", "Charlie", "David"];
+    //ENTER YOUR CODE HERE
+    const removedName = names.pop();
+    console.log(names);
+    console.log(removedName);
+
+    /*
+    PROBLEM 2: Use the pop method to remove all elements from the numbers array.
+    Print the array after each pop operation.
+    */
+    const numbers = [1, 2, 3, 4, 5];
+    //ENTER YOUR CODE HERE
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+    numbers.pop(); // pop the last element
+    console.log(numbers);
+
+
+    /*
+    PROBLEM 3: Use the pop and shift methods to remove the first and last elements.
+    Store the removed elements in variables called first and last.
+    Console log the array, first, and last.
+    */
+
+    const animals = ["dog", "cat", "fish", "bird"];
+    //ENTER YOUR CODE HERE
+    const first = animals.shift();
+    const last = animals.pop();
+
+    console.log(animals);
+    console.log(first);
+    console.log(last);
+
+    /*
+    PROBLEM 4: You are given an array of numbers.
+    Use the pop method to remove the last two elements from the array.
+    Return the removed elements in a new array.
+    */
+    const nums = [1, 2, 3, 4, 5, 6];
+
+    function popLastTwo(arr) {
+      // Your code here
+      const lastTwo = [];
+      lastTwo.push(arr.pop());
+      lastTwo.push(arr.pop());
+      return lastTwo;
+    }
+
+    console.log(popLastTwo(nums)); // should log [6, 5]
+    console.log(nums); // should log [1, 2, 3, 4]
+
+
+    /*
+    PROBLEM 5 (DEBUGGING): The code below should remove the last element from the letters array.
+    However, it is not working.  Please fix the code so that it works as expected.
+    */
+
+    const letters = ['a', 'b', 'c', 'd'];
+
+    letters.pop(); // Pop is a method so there must be parentheses after it.
+
+    console.log(letters); // log the remaining letters to the console
+
+  </script>
+
+</body>
+
+</html>

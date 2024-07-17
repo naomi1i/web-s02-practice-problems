@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Solutions to Practice Problems with indexOf</h1>
+  <p>All the solutions for this set of practice problems are displayed below. These solutions are for the problems in
+    the "index.html" file.</p>
+  <script>
+    const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+    /*
+    PROBLEM 1:
+    Find the index of "banana" in the array "fruits" and log it to the console.
+    */
+    console.log(fruits.indexOf("banana")); // SOLUTION
+
+    /*
+    PROBLEM 2:
+    Check if "fig" is in the array "fruits". If it is not present, log -1 to the console.
+    */
+    console.log(fruits.indexOf("fig")); // SOLUTION
+
+    /*
+    PROBLEM 3:
+    Find the index of "cherry" in the array "fruits" and use slice to log an array of elements after "cherry", including "cherry".
+    */
+    const cherryIndex = fruits.indexOf("cherry");
+    console.log(fruits.slice(cherryIndex)); // SOLUTION
+
+    /*
+    PROBLEM 4:
+    Using indexOf, find the first occurrence of "date" in the array "fruits" and log an array that excludes this element and all elements before it.
+    */
+    const dateIndex = fruits.indexOf("date");
+    console.log(fruits.slice(dateIndex + 1)); // SOLUTION
+
+    /*
+    PROBLEM 5 (DEBUGGING):
+    The following code should log the index of "elderberry". Fix the error in the code.
+    const searchFruit = "elderbery";
+    console.log(fruits.indexOf(searchFruit));
+    */
+    const searchFruit = "elderberry"; // Corrected spelling
+    console.log(fruits.indexOf(searchFruit)); // SOLUTION
+
+  </script>
+  <section
+    style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
+    <h3>About These Solutions</h3>
+    <p>
+      The above solutions demonstrate how to use the `indexOf()` method in JavaScript to find the position of elements
+      in an array. Understanding and applying these solutions can help improve your skills in handling arrays and their
+      elements efficiently.
+      <br><br>
+      Remember, practice is key to mastering these concepts. Try to understand each solution and how it applies to the
+      problem statement.
+    </p>
+  </section>
+</body>
+
+</html>

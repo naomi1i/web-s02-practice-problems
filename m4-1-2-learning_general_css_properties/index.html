@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<!--
+  DIRECTIONS: The focus of these practice problems is to apply some styling to the HTML elements on the webpage.
+  Add appropriate css rules to the internal styles section of the HTML page to complete these tasks.
+-->
+
+<!-- PROBLEM 1: Change the background colors for the main and footer tags to #252422 and #eb5e28 respectively. Change the color of all text in the main tag to #fffcf2 -->
+<!-- PROBLEM 2: Set the CSS rule "align-items: center;" on the header tag to align the heading "Bloom" and the nav items so they are centered perfectly across the vertical axis of the header section-->
+<!-- PROBLEM 3: Remove the bullets (disc) on the unordered nav list items using "list-style-type: none;" -->
+<!-- PROBLEM 4: Move the text in the main tag 20px from the top and bottom sides.
+      HINT: Set the padding-top and padding-bottom properties on the main tag -->
+<!-- PROBLEM 5: Position the footer elements so they sit at the center of the footer section.
+      HINT: Use "align-items: center" and "justify-content: center" rules on the footer tag -->
+<!-- PROBLEM 6(DEBUGGING): The background color for the header section does not cover the entire width of the webpage. Change one of the css properties for the header section to fix this -->
+
+<head>
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      display: inline;
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #eb5e28;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #403d39;
+      font-weight: 500;
+    }
+
+    header {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 5%;
+      background-color: #fffcf2;
+    }
+
+
+    ul {
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+    }
+
+    main {
+      color: #000000;
+      height: calc(100vh - 80px - 100px);
+      padding: 0px 5%;
+    }
+
+    footer {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="heading">Bloom</h2>
+    <nav>
+      <ul>
+        <li><a href="#home" class="header-nav">Home</a></li>
+        <li><a href="#about" class="header-nav">About</a></li>
+        <li><a href="#blog" id="blog-link" class="header-nav">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Practice Problems Webpage</h1>
+    <p>This page needs some styling! Complete the problems step by step to transform this webpage!</p>
+  </main>
+  <footer>
+    <nav>
+      <a href="#"><i class="fa fa-facebook-official"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </nav>
+    <p>Powered by <a href="https://www.bloomtech.com/" target="_blank">Bloomtech</a></p>
+  </footer>
+</body>
+
+</html>

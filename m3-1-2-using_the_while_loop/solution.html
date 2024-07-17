@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Use a while loop to print numbers counting backwards from 5 to 0.
+    */
+
+    let countDown = 5;
+    while (countDown >= 0) {
+      console.log(countDown);
+      countDown--;
+    }
+
+    /*
+    PROBLEM 2: Using a while loop, find and print the sum of all numbers from 1-10.
+    */
+
+    let j = 1;
+    let sum = 0;
+
+    while (j <= 10) {
+      sum += j;
+      j++;
+    }
+
+    console.log(sum);
+
+    /*
+    PROBLEM 3: Use a while loop to print all the odd numbers between 1 and 10.
+    */
+    let num = 1;
+    while (num < 10) {
+      console.log(num);
+      num += 2;
+    }
+
+    /*
+    PROBLEM 4: Use a while loop to print all the books titles in the array "books" up until you find the first book that begins with "The".
+    */
+    const books = ["To kill a Mockingbird", "Harry Potter", "Things fall apart", "The old man and the sea", "Macbeth"];
+    let i = 0;
+
+    while (i < books.length && !books[i].startsWith("The")) {
+      console.log(books[i])
+      i++;
+    }
+
+    /*
+    PROBLEM 5 (DEBUGGING): Fix the issue(s) with the code block below so it prints out the string "hello world" 5 times
+    */
+
+    let count = 5;
+    while (count) {
+      console.log("hello world");
+      count--;
+    }
+
+  </script>
+
+</body>
+
+</html>

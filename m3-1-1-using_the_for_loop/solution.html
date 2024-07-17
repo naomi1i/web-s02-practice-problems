@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Using a for loop, print to the console the numbers 1-10 with the string "Mississippi" after each number. e.g. "1 Mississippi", "2 Mississippi", etc.
+    */
+    for (let i = 1; i <= 10; i++) {
+      console.log(`${i} Mississippi`);
+    }
+
+    /*
+     PROBLEM 2: Using a for loop, iterate over each item in the 'numbers' array and print any number that even
+    */
+    let numbers = [15, 24, 8, 32, 15, 27, 64, 7, 82, 22, 12, 15];
+
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 === 0) {
+        console.log(numbers[i]);
+      }
+    }
+
+    /*
+    PROBLEM 3: Using a for loop, replace all occurences of 15 in the array 'numbers' with null. Log 'numbers' to the console
+    */
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] === 15) {
+        numbers[i] = null
+      }
+    }
+    console.log(numbers)
+
+    /*
+    PROBLEM 4: Use a for loop to join the steps in the array 'steps' to form a string containing all the steps. Console.log the string created
+    */
+    const steps = ['get ingredients', 'mix butter and flour', 'add eggs', 'preheat oven', 'bake cake'];
+    let recipe = ''
+    for (let i = 0; i < steps.length; i++) {
+      recipe += steps[i] + ', \n'
+    }
+    console.log(recipe)
+    /*
+    PROBLEM 5 (DEBUGGING): The code below is meant to loop over and sum up all the numbers in the nums array. Your task is to log 'sum' to the console. Fix the code so the right value (10) is printed.
+    */
+    const nums = [1, 2, 3, 4];
+    let sum = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+      sum += nums[i];
+    }
+
+    console.log(sum);
+
+  </script>
+
+</body>
+
+</html>

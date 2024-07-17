@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    /*
+    PROBLEM 1: Create an empty array called colors. Use the push method to add the following elements
+    in order: "red", "green", "blue", "yellow". What is the return value of the push method
+    when adding each of these elements?
+    */
+    //ENTER YOUR CODE HERE
+
+    const colors = [];
+    colors.push("red");
+    colors.push("green");
+    colors.push("blue");
+    colors.push("yellow");
+    console.log(colors);
+
+    // The return value is [ 'red', 'green', 'blue', 'yellow'].
+
+    /*
+    PROBLEM 2: Create an array called numbers with the elements 1, 2, and 3.
+    Use the push method to add the number 4 to the end of the array.
+    Print the updated array to the console.
+    */
+    //ENTER YOUR CODE HERE
+
+    const numbers = [1, 2, 3];
+    numbers.push(4);
+    console.log(numbers);
+
+    // The return value is [ 1, 2, 3, 4 ].
+
+
+    /*
+   PROBLEM 3: Create an array called students with the elements "Alice" and "Bob".
+   Use the push method to add the string "Charlie" to the end of the array, and
+   then use unshift to add the string "David" to the beginning of the array.
+   Print the updated array to the console.
+   */
+    //ENTER YOUR CODE HERE
+
+    const students = ["Alice", "Bob"];
+    students.push("Charlie");
+    students.unshift("David");
+    console.log(students);
+
+    // The return value is [ 'David', 'Alice', 'Bob', 'Charlie' ].
+
+    /*
+    PROBLEM 4: Use the push method to combine arr1 and arr2 into a single array
+    and store it in a new variable called combinedArr.
+    */
+    const arr1 = [1, 2, 3];
+    const arr2 = [4, 5, 6];
+    //ENTER YOUR CODE HERE
+    let combinedArr = [];
+    combinedArr.push(1, 2, 3, 4, 5, 6);
+    // combinedArr.push(...arr1, ...arr2); // also works
+    console.log(combinedArr); // What is the value of combinedArr?
+
+    // The return value is [ 1, 2, 3, 4, 5, 6 ].
+
+    /*
+   PROBLEM 5 (DEBUGGING): The code below should console.log the array
+    ["apple", "banana", "cherry", "grapes", "watermelon"].
+    Fix the error and run the corrected code.
+    */
+
+    const fruits = ["apple", "banana", "cherry"];
+    fruits.push("grapes");
+    fruits.push("watermelon");
+  </script>
+
+</body>
+
+</html>
