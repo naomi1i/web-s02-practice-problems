@@ -6,7 +6,7 @@ Each subfolder inside this project corresponds to a **Learning Objective** in yo
 
 ## Setup Instructions
 
-1. Fork and clone this repository to a location in your computer you can find easily.
+1. Fork this repository and clone it to a location in your computer you can find easily.
 2. Install the [Live Server extension for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 **In order to work on a particular set of practice problems:**
