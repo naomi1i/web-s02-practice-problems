@@ -25,7 +25,7 @@ Each subfolder inside this project corresponds to a **Learning Objective** in yo
 
 ### Module 1 - Git and GitHub
 
-(No practice problems)
+(No code, refer to your learning platform)
 
 ### Module 2 - Objects and Arrays
 
