@@ -10,6 +10,19 @@
     when adding each of these elements?
     */
     //ENTER YOUR CODE HERE
+    const colors = [];
+
+    const addRed = colors.push("red");
+    console.log(addRed);
+
+    const addGreen = colors.push("green");
+    console.log(addGreen);
+
+    const addBlue = colors.push("blue");
+    console.log(addBlue);
+
+    const addYellow = colors.push("yellow");
+    console.log(addYellow);
 
     /*
     PROBLEM 2: Create an array called numbers with the elements 1, 2, and 3.
@@ -17,7 +30,10 @@
     Print the updated array to the console.
     */
     //ENTER YOUR CODE HERE
+    const numbers = [1, 2, 3];
 
+    const addFour = numbers.push(4);
+    console.log(numbers);
     /*
     PROBLEM 3: Create an array called students with the elements "Alice" and "Bob".
     Use the push method to add the string "Charlie" to the end of the array, and
@@ -25,6 +41,13 @@
     Print the updated array to the console.
     */
     //ENTER YOUR CODE HERE
+    const students = ["Alice", "Bob"];
+
+    const addCharlie = students.push("Charlie");
+    console.log(students);
+
+    const addDavid = students.unshift("David");
+    console.log(students);
 
     /*
     PROBLEM 4: Use the push method to combine arr1 and arr2 into a single array
@@ -33,20 +56,23 @@
     const arr1 = [1, 2, 3];
     const arr2 = [4, 5, 6];
     //ENTER YOUR CODE HERE
-
+    let combinedArr = [];
+    combinedArr.push(1, 2, 3, 4, 5, 6);
+    console.log(combinedArr);
     // console.log(combinedArr); // What is the value of combinedArr?
-
+    //
     /*
     PROBLEM 5 (DEBUGGING): The code below should console.log the array
     ["apple", "banana", "cherry", "grapes", "watermelon"].
     Fix the error and run the corrected code.
     */
 
-    /*
+    
     const fruits = ["apple", "banana", "cherry"];
     fruits.push("grapes");
-    fruits.push("kiwi");
-    */
+    fruits.push("watermelon");
+    console.log(fruits);
+    
 
   </script>
 </body>

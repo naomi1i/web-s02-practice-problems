@@ -14,30 +14,43 @@
     PROBLEM 1: Given the array “rainbowColors” above, write a simple “for..in” loop that iterates through all the colors of the rainbow but prints out their indices ONLY to the console.
     */
     //ENTER YOUR CODE HERE
+for (let i in rainbowColors) {
+  console.log(i);
+};
 
     /*
     PROBLEM 2:  Given the array "rainbowColors" above, write another "for..in" loop that iterates through all the colors of the rainbow and prints out the name of each one to the console.
     */
     //ENTER YOUR CODE HERE
+for (let i in rainbowColors) {
+   console.log(rainbowColors[i]);
+};
 
     /*
     PROBLEM 3: Create a variable called "kitchenItems" that holds an array of at least 5 kitchen items.  Using a "for..in" loop and concatenating strings, print out the following for each item: "I need to get a ______ at the store." (the blank should include a different item for each sentence)
     */
     //ENTER YOUR CODE HERE
+const kitchenItems = ["cutlery set", "can-opener", "stand mixer", "microwave", "pan"];
 
+for (let i in kitchenItems) {
+  console.log("I need to get a " + kitchenItems[i] + " at the store.");
+};
     /*
     PROBLEM 4: Create a variable called "toDoList" that holds an array of at least 4 things you need to do around your home.  Using a "for..in" loop and concatenating strings, print the index and value of each item in the following format: "Item Number __: ________" (first blank is index, second blank is todo item). It is okay if your first item number is 0.
     */
     //ENTER YOUR CODE HERE
-
+const toDoList = ["steam-clean the kitchen floors", "start roomba", "clean counters", "shovel the snow"];
+for (let i in toDoList) {
+  console.log("Item Number " + [i] + " : " + toDoList[i]);
+}
     /*
     PROBLEM 5 (DEBUGGING):  The following loop prints out the indices of each item in an array, but you want the actual value instead.  Please fix the loop to successfully print out the values of all items in the “practiceArray” array.
     */
-    let practiceArray = [3, 4, 5, 8, 9]
+    let practiceArray = [3, 4, 5, 8, 9];
 
     for (let i in practiceArray) {
-      console.log(i)
-    }
+      console.log(practiceArray[i])
+    };
 
   </script>
 </body>
