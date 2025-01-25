@@ -11,32 +11,44 @@
     Find the index of "banana" in the array "fruits" and log it to the console.
     */
     // ENTER YOUR CODE HERE
+const bananaIndex = fruits.indexOf("banana");
+console.log(bananaIndex);
 
     /*
     PROBLEM 2:
     Check if "fig" is in the array "fruits". If it is not present, log -1 to the console.
     */
     // ENTER YOUR CODE HERE
+const figIndex = fruits.indexOf("fig");
+console.log(figIndex);
 
     /*
     PROBLEM 3:
     Find the index of "cherry" in the array "fruits" and use slice to log an array of elements after "cherry", including "cherry".
     */
     // ENTER YOUR CODE HERE
-
+const cherryIndex = fruits.indexOf("cherry");
+const cherryArray = fruits.slice(2,5);
+console.log(cherryArray);
     /*
     PROBLEM 4:
     Using indexOf, find the first occurrence of "date" in the array "fruits" and log an array that excludes this element and all elements before it.
     */
     // ENTER YOUR CODE HERE
+const dateIndex = fruits.indexOf("date");
+const excludeArray = fruits.slice(4,5);
+console.log(excludeArray);
 
     /*
     PROBLEM 5 (DEBUGGING):
     The following code should log the index of "elderberry". Fix the error in the code.
+    
     const searchFruit = "elderbery";
     console.log(fruits.indexOf(searchFruit));
-    */
+  */
     // ENTER YOUR CODE HERE
+const searchFruit = "elderberry";
+console.log(searchFruit);
 
   </script>
 </body>
